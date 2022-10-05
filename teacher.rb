@@ -1,6 +1,7 @@
 #Teacher class inherits from person
 require_relative './person'
 
+#Add class
 class Teacher < Person
 
  #Adding a constructor
