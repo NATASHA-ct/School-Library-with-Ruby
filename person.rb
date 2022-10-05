@@ -1,4 +1,7 @@
-class Person
+#person now inherits from nameable
+require_relative './nameable'
+
+class Person < Nameable
   # getters and setters
   attr_reader :id
   attr_accessor :name, :age
@@ -19,6 +22,7 @@ class Person
 
   private :of_age?
 
+  
   # private method that returns bolean
   def can_use_services?
     of_age? || @parent_permission
