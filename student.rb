@@ -1,4 +1,4 @@
-#Student class inherits from person
+# Student class inherits from person
 require_relative './person'
 
 class Student < Person
@@ -10,5 +10,4 @@ class Student < Person
   def play_hooky
     "¯\(ツ)/¯"
   end
-
 end

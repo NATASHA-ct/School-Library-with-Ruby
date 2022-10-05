@@ -1,11 +1,10 @@
-#Teacher class inherits from person
+# Teacher class inherits from person
 require_relative './person'
 
-#Add class
+# Add class
 class Teacher < Person
-
- #Adding a constructor
- def initialize(specialization, age, name = 'unkwomn', parent_permission: true)
+  # Adding a constructor
+  def initialize(specialization, age, name = 'unkwomn', parent_permission: true)
     super(age, name, parent_permission)
     @specialization = specialization
   end
