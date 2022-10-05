@@ -1,4 +1,4 @@
-#person now inherits from nameable
+# person now inherits from nameable
 require_relative './nameable'
 
 class Person < Nameable
@@ -25,7 +25,7 @@ class Person < Nameable
   def correct_name
     @name
   end
-  
+
   # private method that returns bolean
   def can_use_services?
     of_age? || @parent_permission

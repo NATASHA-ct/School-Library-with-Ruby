@@ -1,9 +1,9 @@
-#Decorator inherits from nameable
+# Decorator inherits from nameable
 require_relative './nameable'
 
 class Decorator < Nameable
-    #constructor
-  def initialize(nameable)
+  # constructor
+  def initialize(_nameable)
     super()
     @name = name
   end
