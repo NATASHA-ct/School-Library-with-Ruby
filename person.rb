@@ -22,6 +22,9 @@ class Person < Nameable
 
   private :of_age?
 
+  def correct_name
+    @name
+  end
   
   # private method that returns bolean
   def can_use_services?
