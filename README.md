@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# School-Library-Database
+# School-Library
 
 > About
 This is an application that works as a tool to record what books are in the library and who borrows them. The app will allow you to:
