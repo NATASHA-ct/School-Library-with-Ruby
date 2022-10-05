@@ -21,7 +21,7 @@ This is an application that works as a tool to record what books are in the libr
 
 ### Install
 -In your terminal, navigate to your current directory and run this code
-
+ https://github.com/NATASHA-ct/School-Library-Database.git
 
 -Locate the directory in your file explorer
 
