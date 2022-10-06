@@ -26,6 +26,11 @@ class Person < Nameable
     @name
   end
 
+  def add_rental(rental)
+    @rental.push(rental)
+    rental.person = self
+  end
+
   # private method that returns bolean
   def can_use_services?
     of_age? || @parent_permission
