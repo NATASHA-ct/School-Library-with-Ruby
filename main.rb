@@ -21,22 +21,27 @@ def user_choice
   gets.chomp.to_i
 end
 
-def option(choice)
+def display(choice)
   case choice
   when 1
     @method.list_all_books
   when 2
     @method.list_all_people
+  when 6
+    @method.list_all_rentals_id
+  when 7
+    @method.quit_app
+  end
+end
+
+def add(choice)
+  case choice
   when 3
     @method.create_a_person
   when 4
     @method.create_a_book
   when 5
     @method.create_a_rental
-  when 6
-    @method.list_all_rentals_id
-  when 7
-    @method.quit_app
   end
 end
 
@@ -46,8 +51,10 @@ def main(status)
 
     print_menu
     user_input = user_choice
-    option(user_input)
+    display(user_input)
+    add(user_input)
   end
 end
 
 main(true)
+main.main
