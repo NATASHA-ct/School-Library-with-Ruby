@@ -23,9 +23,23 @@ class App
   end
   #methods for all required functionalities
     def list_all_books
+        if @books.length.zero?
+        puts 'You don\'t have any books'
+        else
+        @books.each_with_index do |bk, index|
+            puts "#{index}) Title: #{bk.title}, Author: #{bk.author}"
+          end
+        end
     end
 
     def list_all_people
+            if @people.length.zero?
+        puts 'You need at least one person'
+        else
+        @people.map.each_with_index do |person, index|
+            puts "#{index}) [#{person.classroom}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
+        end
+        end
     end
 
     def create_a_person
