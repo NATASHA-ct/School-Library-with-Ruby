@@ -1,6 +1,4 @@
-d#!/usr/bin/env ruby
-
-require_relative './app'
+require './app'
 @method = App.new
 
 #Main menu
@@ -40,3 +38,15 @@ def match_option(choice)
   else
     puts 'Not a valid choice'
   end
+
+  def main(status)
+  loop do
+    break unless status
+
+    print_menu
+    user_input = user_choice
+    match_input(user_input)
+  end
+end
+
+main(true)
