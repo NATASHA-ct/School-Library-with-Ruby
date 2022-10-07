@@ -13,6 +13,14 @@ require './trimmerdecorator'
 class App
   attr_accessor :people, :book, :rental
 
+  #App constructors
+  def initialize()
+    @people = []
+    @books = []
+    @book = nil
+    @rentals = []
+    @person = nil
+  end
   #methods for all required functionalities
     def list_all_books
     end
