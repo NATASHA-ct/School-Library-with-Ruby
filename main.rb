@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby
+
 require_relative './app'
 @method = App.new
 
@@ -56,3 +56,4 @@ def main(status)
 end
 
 main(true)
+main.main
