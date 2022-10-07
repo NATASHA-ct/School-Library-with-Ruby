@@ -1,7 +1,9 @@
-require './app'
+#!/usr/bin/env ruby
+
+require_relative './app'
 @method = App.new
 
-#Main menu
+# Main menu
 def print_menu
   print 'Welcome to my Library! You may perform the following tasks:
   1. List all books.
@@ -14,12 +16,12 @@ def print_menu
   Choose (1-7): '
 end
 
-#Get input from the user
+# Get input from the user
 def user_choice
   gets.chomp.to_i
 end
 
-def match_option(choice)
+def option(choice)
   case choice
   when 1
     @method.list_all_books
@@ -35,17 +37,16 @@ def match_option(choice)
     @method.list_all_rentals_id
   when 7
     @method.quit_app
-  else
-    puts 'Not a valid choice'
   end
+end
 
-  def main(status)
+def main(status)
   loop do
     break unless status
 
     print_menu
     user_input = user_choice
-    match_input(user_input)
+    option(user_input)
   end
 end
 
