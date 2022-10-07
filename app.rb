@@ -35,7 +35,7 @@ class App
 
   def list_all_people
     if @people.length.zero?
-      puts 'You need at least one person'
+      puts 'No person yet!You need at least one person'
     else
       @people.map.each_with_index do |person, index|
         puts "#{index}) [#{person.classroom}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
