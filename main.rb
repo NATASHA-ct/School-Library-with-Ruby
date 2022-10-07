@@ -3,6 +3,7 @@ d#!/usr/bin/env ruby
 require_relative './app'
 @method = App.new
 
+#Main menu
 def print_menu
   print 'Welcome to my Library! You may perform the following tasks:
   1. List all books.
@@ -15,7 +16,7 @@ def print_menu
   Choose (1-7): '
 end
 
+#Get input from the user
 def user_choice
   gets.chomp.to_i
 end
-
