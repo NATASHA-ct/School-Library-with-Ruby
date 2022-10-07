@@ -5,8 +5,8 @@ require './teacher'
 require './rental'
 require './book'
 require './classroom'
+require './base_decorator'
 require './nameable'
-require './decorator'
 require './capitalizedecorator'
 require './trimmerdecorator'
 
@@ -14,7 +14,7 @@ class App
   attr_accessor :people, :book, :rental
 
   # App constructors
-  def initialize()
+  def initialize
     @people = []
     @books = []
     @book = nil

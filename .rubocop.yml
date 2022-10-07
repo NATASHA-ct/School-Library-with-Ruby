@@ -29,7 +29,7 @@ Style/EachForSimpleLoop:
 Style/AndOr:
   Enabled: false
 Style/DefWithParentheses:
-  Enabled: false
+  Enabled: true
 Style/FrozenStringLiteralComment:
   EnforcedStyle: never
 
