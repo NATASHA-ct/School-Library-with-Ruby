@@ -21,6 +21,7 @@ class App
     @rentals = []
     @person = nil
   end
+  
   #methods for all required functionalities
     def list_all_books
         if @books.length.zero?
@@ -91,6 +92,13 @@ class App
     
 
     def create_a_book
+        print 'Splendid! we love new books.
+        Enter the book title: '
+        book_title = gets.chomp
+        print 'Enter the book\'s author: '
+        book_author = gets.chomp
+        @books.push(Book.new(book_title, book_author))
+        puts 'Book was added succesfully!' 
     end
 
     def create_a_rental
