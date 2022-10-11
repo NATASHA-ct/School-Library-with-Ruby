@@ -9,8 +9,9 @@ require './base_decorator'
 require './nameable'
 require './capitalizedecorator'
 require './trimmerdecorator'
+require './main_menu'
 
-class App
+class App < Menu
   attr_accessor :people, :book, :rentals, :student, :person
 
   # App constructors
@@ -21,6 +22,34 @@ class App
     @teacher =[]
     @rentals = []
     @person = nil
+    super
+  end
+
+  def display(choice)
+    case choice
+    when 1 then list_all_books
+    when 2 then list_all_people
+    when 6 then list_all_rentals_id
+    when 7 then quit_app
+    end
+  end
+
+  def add(choice)
+    case choice
+    when 3 then create_a_person
+    when 4 then create_a_book
+    when 5 then create_a_rental
+    end
+  end
+
+  def main(status)
+     loop do
+    break unless status
+
+    print_menu
+    user_input = user_choice
+    display(user_input)
+    add(user_input)
   end
 
   # methods for all required functionalities

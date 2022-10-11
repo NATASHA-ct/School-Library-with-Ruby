@@ -18,6 +18,8 @@ Metrics/ClassLength:
 Metrics/BlockLength:
   AllowedPatterns: ['describe']
   Max: 300
+Metrics/CyclomaticComplexity:
+  Max: 20
 
 
 Style/Documentation:
