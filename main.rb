@@ -1,8 +1,10 @@
 require_relative './app'
-@method = App.new
 
+def app_execute
+ app = App.new
+ app.main
 
 end
 
-main(true)
-main.main
+app_execute(true)
+app_execute.app_execute
