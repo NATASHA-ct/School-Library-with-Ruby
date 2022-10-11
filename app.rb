@@ -11,13 +11,14 @@ require './capitalizedecorator'
 require './trimmerdecorator'
 
 class App
-  attr_accessor :people, :book, :rental
+  attr_accessor :people, :book, :rentals, :student, :person
 
   # App constructors
   def initialize
     @people = []
     @books = []
     @book = nil
+    @teacher =[]
     @rentals = []
     @person = nil
   end
