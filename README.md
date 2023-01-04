@@ -3,11 +3,7 @@
 # School-Library
 
 
-> This is an application that works as a tool to record what books are in the library and who borrows them. The app will allow you to:
-    -Add new students or teachers.
-    -Add new books.
-    -Save records of who borrowed a given book and when.
-  The data is later preseved in a database.This application also has a well organised UI layer  which will be a console app interacting with a user .
+> This is an application that works as a tool to record what books are in the library and who borrows them. The app will allow you to add new students or teachers , add new books, save records of who borrowed a given book and when.The data is later preseved in a database.This application also has a well organised UI layer  which will be a console app interacting with a user .
 
 
 ## Built With
